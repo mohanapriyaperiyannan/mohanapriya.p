@@ -1,0 +1,183 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.container
+{
+	height: 100px;
+	width: 100%;
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+	display: flex;
+	font-family: 'Open Sans', sans-serif;;
+}
+.list1
+{
+	height: 100%;
+	width: 40%;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.list2
+{
+	height: 100%;
+	width: 20%;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.list3
+{
+	height: 100%;
+	width: 40%;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.menu
+{
+	font-size: 35px;
+	display: none;
+}
+.h1
+{
+	color: blue;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 10px;
+}
+.h2
+{
+	font-size: 17px;
+}
+@media (max-width:803px)
+{
+	.list1
+	{
+		width: 35%;
+	}
+	.list2
+	{
+		width: 30%;
+	}
+	.list3
+	{
+		width: 35%;
+	}
+}
+@media(max-width:600px)
+{
+	.list1
+	{
+		display: none;
+	}
+	.list2
+	{
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.list2 li 
+	{
+		margin-left: 47px;
+	}
+	.list2 .h1 
+	{
+		font-size: 25px;
+	}
+	.list2 .h2
+	{
+		font-size: 15px;
+	}
+	.list3 li 
+	{
+		display: none;
+	}
+	.list3
+	{
+		width: 20%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.list3 .menu
+	{
+		display: block;
+	}
+}
+
+.doctor
+{
+	height: 600px;
+	width: 85%;
+	margin-left: 110px;
+	background-color: gray;
+	background-image: url("doctor hand.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-origin: 0 0;
+}
+.day
+{
+	/*position: absolute;*/
+	height: 250px ;
+	width: 500px;
+	background-color: white;
+	/*top: 500px;
+	left: 880px;*/
+	padding: 25px 0 0 25px;
+}
+.p 
+{
+	margin-top: 20px;
+	color: gray;
+}
+button
+{
+	height: 30px;
+	width: 100px;
+	background-color: transparent;
+	color: deepskyblue;
+	margin-top: 30px;
+	font-size: 13px;
+	border: none;
+	font-weight: bold;
+}
+.num
+{
+	height: 30px;
+	width: 150px;
+	background-color: none;
+	color: black;
+	margin-top: -25px;
+	margin-left: 170px;
+	display: flex;
+}
+@media(max-width:600px)
+{
+	.doctor
+	{
+		height: 300px;
+		width: 90%;
+		margin: 30px;
+	}
+@media(max-width:990px)
+{
+	.day 
+	{
+		width: 90%;
+		position: absolute;
+	    top: 300px;
+	}
+}
